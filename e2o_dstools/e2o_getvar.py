@@ -441,7 +441,7 @@ def main(argv=None):
 
             if wrrversion == 1:
                 if standard_name == "rainfall_flux": # Hack to support wrong names in WRR1 for now
-                    standard_name = 'rainfal_flux'
+                    standard_name = 'rainfall_flux'
             if wrrversion == 2 and (variable == "Rainfall" or variable == "SnowfallRate" or variable == "TotalPrecipitation"):
                 if variable == "TotalPrecipitation":
                     _tlist_, _timelist_ = get_times_P(currentdate, currentdate, serverroot, wrrsetroot, _filename[0],
